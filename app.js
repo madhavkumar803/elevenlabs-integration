@@ -37,7 +37,7 @@ app.post('/synthesize', async (req, res) => {
       ? '21m00Tcm4TlvDq8ikWAM'
       : req.body.voice || '21m00Tcm4TlvDq8ikWAM'
 
-  const model = req.body.model || 'eleven_multilingual_v2'
+  const model = req.body.model || 'eleven_monolingual_v1'
 
   const voice_settings =
     req.body.voice_settings == 0
